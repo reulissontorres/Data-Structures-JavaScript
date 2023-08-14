@@ -7,8 +7,9 @@
  */
 
 const reverseDigits = (num, inverso=0) => {
-    if (num < 10) return num + inverso * 10
+    if (num < 10) return num + inverso * 10 // Caso base: retorna o último dígito + inverso * 10
 
+    // Acumula o último dígito invertido
     return reverseDigits(Math.floor(num / 10), num % 10 + inverso * 10)
 }
 
