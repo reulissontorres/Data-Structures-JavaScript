@@ -1,7 +1,7 @@
 /**
  * Encontra o menor dígito em um número inteiro.
  * 
- * @param {number} num - O número inteiro no qual procurar o maior dígito.
+ * @param {number} num - O número inteiro no qual procurar o menor dígito.
  * @returns {number} O menor dígito encontrado no número.
  */
 
