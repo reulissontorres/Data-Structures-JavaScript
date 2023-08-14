@@ -8,15 +8,8 @@
 const largestDigit = (num) => {
     if (num < 10) return num // Caso base: quando o número tem apenas um dígito
 
-    const ultimoDigito = num % 10
-    const restoDoNumero = Math.floor(num / 10)
-
-    // Chamada recursiva para encontrar o maior dígito no resto do número
-    const maior = largestDigit(restoDoNumero)
-
     // Retorna o maior valor entre o último dígito e o maior dígito no resto do número
-    return Math.max(ultimoDigito, maior)
-
+    return Math.max(num % 10, largestDigit(Math.floor(num / 10)))
 }
 
 // Exemplos de uso:
